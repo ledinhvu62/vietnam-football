@@ -1,0 +1,50 @@
+.navbar {
+    padding: 10px 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: transparent;
+    z-index: 99;
+
+    &__logo {
+        flex: 1;
+
+        img {
+            width: 30%;
+            height: auto;
+        }
+    }
+
+    &__menu {
+        ul {
+            display: flex;
+        }
+
+        &__item {
+            min-width: 120px;
+
+            a {
+                float: left;
+                width: 100%;
+                color: $black;
+                text-align: center;
+                font-size: 15px;
+                font-weight: 900;
+                padding: 12px;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: $red-one;
+                }
+
+            }
+
+            &.active a {
+                color: $red-one;
+                border-bottom: 3px solid $red-one;
+            }
+        }
+    }
+}

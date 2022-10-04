@@ -1,0 +1,102 @@
+$red: #ff3838;
+$white: #ffffff;
+$black: #000000;
+
+$red-one: #CB356B;
+$red-two: #BD3F32;
+
+$green-one: #56ab2f;
+$green-two: #94d049;
+
+$black-one: #232526;
+$black-two: #70767b;
+
+$blue-one: #021B79;
+$blue-two: #0575E6;
+
+$silver: #bdc3c7;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.bg-red {
+    background-color: $red;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+.bg-blue {
+    background-color: $blue-one;
+}
+
+.bg-green {
+    background-color: $green-one;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.col-6 {
+    width: 50%;
+    position: relative;
+}
+
+.fullheight {
+    height: 100vh;
+}
+
+.main {
+    min-height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+$colors: (
+    "blue": #4267b2,
+    "orange": #fbb96b,
+    "pink": #fe7e73,
+    "white": #bdc3c7,
+    "black": #000,
+    "red": #ff0000,
+    "purple": #aa58e3,
+    "yellow": #e9ef3a,
+    "green": #56ab2f
+);
+
+@each $color, $val in $colors {
+    .color-#{$color} {
+        color: $val;
+    }
+
+    .bg-#{$color} {
+        background-color: $val;
+    }
+
+    .bg-img-#{$color} {
+        background-image: linear-gradient(to top right, #fff, $val);
+    }
+}
