@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
-import logo from '../assets/images/vl1.png'
+import logo from '../assets/images/logo.png'
 
 const mainNav = [
     {
@@ -9,18 +9,18 @@ const mainNav = [
         path: "/"
     },
     {
-        display: "V.League 1",
-        path: "/vleague-1"
+        display: "Fixtures",
+        path: "/fixtures"
     },
     {
-        display: "V.League 2",
-        path: "/vleague-2"
+        display: "Results",
+        path: "/results"
     }, {
-        display: "V.League 3",
-        path: "/vleague-3"
+        display: "Tables",
+        path: "/tables"
     }, {
-        display: "V.League 4",
-        path: "/vleague-4"
+        display: "News",
+        path: "/news"
     },
 ]
 

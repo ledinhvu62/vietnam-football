@@ -35,7 +35,7 @@ const Home = () => {
                 <div className="col-6 fullheight">
                     <div className="club__info">
                         <div className="club__info__item">
-                            <span>{club.league}</span>
+                            <span>V.League 1</span>
                         </div>
                         <div className="club__info__item">
                             <h2>{club.name}</h2>
